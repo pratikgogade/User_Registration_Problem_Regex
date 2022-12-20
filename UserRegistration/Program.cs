@@ -16,7 +16,7 @@ namespace UserRegistration
             while (flag)
             {
                 Console.WriteLine("User Registration Problem using REGEX");
-                Console.WriteLine("1.First Name\n2.Last Name");
+                Console.WriteLine("1.First Name\n2.Last Name\n4.Phone Number");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -27,6 +27,10 @@ namespace UserRegistration
                     case 2:
                         LastName lastName = new LastName();
                         lastName.Last();
+                        break;
+                    case 4:
+                        PhoneNumber phoneNumber = new PhoneNumber();
+                        phoneNumber.PhnNum();
                         break;
                     default:
                         flag = false;
