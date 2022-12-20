@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Text.RegularExpressions;//namespace for regex
+using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,13 +16,17 @@ namespace UserRegistration
             while (flag)
             {
                 Console.WriteLine("User Registration Problem using REGEX");
-                Console.WriteLine("1.First Name");
+                Console.WriteLine("1.First Name\n2.Last Name");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
                     case 1:
                         FirstName firstName = new FirstName();
                         firstName.First();
+                        break;
+                    case 2:
+                        LastName lastName = new LastName();
+                        lastName.Last();
                         break;
                     default:
                         flag = false;
