@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace UserRegistration
 {
-    internal class Password1
+    internal class Password
     {
         public void Pass()
         {
             Console.WriteLine("Enter User Password");
             var data = Console.ReadLine();
-            string pattern = "[A-Za-z0-9]{8,}";
+            string pattern = "^(?=.*?[A-Z]).{8,}$";
             Regex regex = new Regex(pattern);
             if (regex.IsMatch(data))
             {

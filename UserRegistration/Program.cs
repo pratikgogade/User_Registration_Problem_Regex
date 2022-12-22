@@ -37,7 +37,7 @@ namespace UserRegistration
                         phoneNumber.PhnNum();
                         break;
                     case 5:
-                        Password1 password1 = new Password1();
+                        Password password1 = new Password();
                         password1.Pass();
                         break;
                     default:
